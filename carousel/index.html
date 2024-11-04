@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous"
+  />
+    <title>Image Carousel</title>
+  </head>
+  <body>
+    <div class="slider-container">
+      <div
+        class="slide active"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1721886296276-48e647982dfd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        "
+      ></div>
+      <div
+        class="slide"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1704318847747-1b3fc0e645ba?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        "
+      ></div>
+      <div
+        class="slide"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1648137793374-13a85c6cc59e?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        "
+      ></div>
+      <div
+        class="slide"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1729180179367-ddadaeb50e18?q=80&w=3066&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        "
+      ></div>
+      <div
+        class="slide"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1728878039239-6b2f85e3c361?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        "
+      ></div>
+      <button class="arrow left-arrow" id="left">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="arrow right-arrow" id="right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    <div class="dots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

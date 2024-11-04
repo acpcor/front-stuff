@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --beverage: lightgrey;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: "100%";
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mugContainer {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mugHolder {
+  height: 20px;
+  width: 40px;
+  transform: rotate(-90deg);
+  border-radius: 25px 25px 0 0;
+  border: 10px solid lightgrey;
+  position: absolute;
+  margin-right: 100px;
+}
+
+.mugBody {
+  height: 100px;
+  width: 80px;
+  background-color: lightgrey;
+  border-radius: 8px;
+}
+
+.chocolate {
+  width: 70px;
+  background-color: var(--beverage);
+  height: 70px;
+  position: absolute;
+  bottom: 55px;
+  border-radius: 3px;
+}
+
+.chocolateAnimation {
+  -webkit-animation: fill-it-up 3s linear forwards;
+  animation: fill-it-up 3s linear forwards;
+}
+
+.button {
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  background-color: lightgrey;
+  color: white;
+  border-width: 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes fill-it-up {
+  0% {
+    height: 5%;
+  }
+  100% {
+    height: 40%;
+  }
+}
+
+@keyframes fill-it-up {
+  0% {
+    height: 5%;
+  }
+  100% {
+    height: 40%;
+  }
+}
+
+#steamContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.steam {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: lightgray;
+  margin-top: -140px;
+  margin-left: -79px;
+  z-index: 0;
+  opacity: 0;
+}
+
+#steam1 {
+  -webkit-animation: steam1 4s ease-out infinite;
+  animation: steam1 4s ease-out infinite;
+}
+
+#steam3 {
+  -webkit-animation: steam1 4s ease-out 1s infinite;
+  animation: steam1 4s ease-out 1s infinite;
+}
+
+@keyframes steam1 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-200px) translateX(-20px) scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes steam1 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-200px) translateX(-20px) scale(1);
+    opacity: 0;
+  }
+}
+
+#steam2 {
+  -webkit-animation: steam2 4s ease-out 0.5s infinite;
+  animation: steam2 4s ease-out 0.5s infinite;
+}
+
+#steam4 {
+  -webkit-animation: steam2 4s ease-out 1.5s infinite;
+  animation: steam2 4s ease-out 1.5s infinite;
+}
+
+@-webkit-keyframes steam2 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-200px) translateX(20px) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes steam2 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-200px) translateX(20px) scale(1);
+    opacity: 0;
+  }
+}
